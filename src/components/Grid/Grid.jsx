@@ -14,8 +14,8 @@ export const Grid = ({ items }) => {
 			columnClassName={styles.grid_column}
 			className={styles.grid}
 		>
-			{items.map(({ id, url, images, title }) => (
-				<div>
+			{items.map(({ id, url, images, title }, index) => (
+				<div key={index}>
 					<Card
 						id={id}
 						url={url}

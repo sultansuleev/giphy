@@ -1,3 +1,16 @@
 .App {
 	text-align: center;
 }
+
+.header {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.link {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-decoration: none;
+}
