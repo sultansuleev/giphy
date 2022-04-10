@@ -18,10 +18,7 @@ const Card = ({ previewUrl, id, className }) => {
 	}
 
 	return (
-		<Link
-			className={[styles.root, className].join(' ')}
-			to={`${process.env.PUBLIC_URL}/gif/${id}`}
-		>
+		<Link className={[styles.root, className].join(' ')} to={`/gif/${id}`}>
 			<img
 				src={previewUrl}
 				style={inlineImageStyles}

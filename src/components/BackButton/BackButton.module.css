@@ -1,0 +1,18 @@
+.backButton {
+	background-color: var(--primary-text-color);
+	color: var(--reversed-text-color);
+	z-index: 1;
+	font-size: 30px;
+	padding: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	position: absolute;
+	left: 20px;
+	top: -65px;
+	transition: .5s ease;
+}
+
+.backButton:hover {
+	background-color: var(--reversed-text-color);
+	color: var(--primary-text-color);
+}

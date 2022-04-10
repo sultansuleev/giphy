@@ -3,7 +3,7 @@ import { Card } from '../Card'
 import styles from './Grid.module.css'
 export const Grid = ({ items }) => {
 	const breakpointColumnsObj = {
-		default: 4,
+		default: 5,
 		1100: 3,
 		700: 2,
 		500: 1,

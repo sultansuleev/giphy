@@ -1,0 +1,13 @@
+.button {
+	background-color: var(--accent-color);
+	color: var(--reversed-text-color);
+	border: 1px solid var(--accent-color);
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	font-size: 20px;
+	padding: 1em;
+}
+
+.button:hover {
+	background-color: var(--accent-color-darken);
+}

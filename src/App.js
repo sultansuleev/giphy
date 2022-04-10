@@ -11,11 +11,14 @@ function App() {
 	const location = useLocation()
 
 	const search = searchQuery => {
-		navigate(`${process.env.PUBLIC_URL}/search?q=${searchQuery}`)
+		navigate(`/search?q=${searchQuery}`)
 	}
 	return (
 		<div className='App'>
 			<header className='header'>
+				<Link className='link' to={`/`}>
+					Home
+				</Link>
 				<SearchForm onSubmit={search} />
 			</header>
 			<Routes location={location}>
@@ -31,7 +34,7 @@ function App() {
 					render={props => <Search {...props} />}
 				/>
 				<Route
-					path='/details'
+					path='/gif/:id'
 					element={<Details />}
 					render={props => <Details {...props} />}
 				/>

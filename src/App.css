@@ -11,6 +11,12 @@
 .link {
 	position: absolute;
 	top: 30px;
-	right: 30px;
+	left: 30px;
+	color: var(--primary-text-color);
 	text-decoration: none;
+	transition: .5s ease;
+}
+
+.link:hover {
+	color: var(--accent-color-darken);
 }
